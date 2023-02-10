@@ -6,12 +6,13 @@ import {
     createRoutesFromElements, 
     RouterProvider 
   } from 'react-router-dom'
-import { Home, Layout } from './Pages'
+import { Home, Layout, Sets } from './Pages'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
         <Route index element={<Home />} />
+        <Route path='sets' element={<Sets />}></Route>
     </Route>
   )
 )
