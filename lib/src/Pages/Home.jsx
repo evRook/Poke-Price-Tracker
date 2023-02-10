@@ -1,20 +1,21 @@
-import { useEffect } from 'react';
+import React from 'react';
+import './Home.css'
 import { useLoaderData } from 'react-router-dom'
 
 export default function Home() {
+    
+    const homeData = useLoaderData()
     let pokeArr = []
 
-    const homeData = useLoaderData()
-
-    // homeData.data.map(({images, id }) => {
-    //     return(
-    //         pokeArr.push(
-    //             <div key={id}>
-    //                 <img src={images.small} alt="" />
-    //             </div>
-    //         )
-    //     )
-    // })
+    homeData.data.map(({images, id }) => {
+        return(
+            pokeArr.push(
+                <div key={id}>
+                    <img src={images.small} alt="" />
+                </div>
+            )
+        )
+    })
 
     console.log(homeData.data)
 
