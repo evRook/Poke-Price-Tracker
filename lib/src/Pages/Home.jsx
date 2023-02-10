@@ -1,27 +1,31 @@
 import React from 'react';
 import './Home.css'
+import Slider from './Components/Slider'
 import { useLoaderData } from 'react-router-dom'
 
 export default function Home() {
-    
-    const homeData = useLoaderData()
-    let pokeArr = []
 
-    homeData.data.map(({images, id }) => {
+
+    const base1Data = useLoaderData()
+    let base1Arr = []
+
+    base1Data.data.map(({images, name, flavorText, number, tcgplayer }) => {
         return(
-            pokeArr.push(
-                <div key={id}>
-                    <img src={images.small} alt="" />
-                </div>
+            base1Arr.push(
+                // {images},
+                // flavorText,
+                // number,
+                // tcgplayer,
             )
         )
     })
 
-    console.log(homeData.data)
+    console.log(base1Data.data)
+    console.log(base1Arr)
 
     return ( 
         <div className="home--container">
-            {pokeArr}
+            <Slider />
         </div>
      );
 }

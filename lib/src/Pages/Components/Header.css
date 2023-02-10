@@ -1,5 +1,5 @@
 .header--container {
-    
+    border: 2px solid grey; 
     height: 75px;
     border-bottom-right-radius: 100px;
     border-top-right-radius: 20px;

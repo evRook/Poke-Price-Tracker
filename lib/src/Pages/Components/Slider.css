@@ -1,0 +1,15 @@
+.slider--container {
+    border: 2px solid grey;
+    width: 600px;
+    height: 400px;
+    display: flex;
+}
+
+.slider--button {
+    width: 30px;
+    border: 2px solid grey;
+}
+
+.slider--content {
+    width: 90%;
+}
