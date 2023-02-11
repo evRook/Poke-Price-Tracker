@@ -15,12 +15,13 @@ export default function Home() {
             return(
                 base1Arr.push(
                     {
-                        images,
-                        name,
-                        set,
-                        number,
-                        flavorText,
-                        tcgplayer,
+                     images,
+                     name,
+                     set,
+                     number,
+                     rarity,
+                     flavorText,
+                     tcgplayer,
                     }
                 )
             )
@@ -50,6 +51,8 @@ export default function Home() {
         }
     }
 
+    console.log(visableCard)
+
     return ( 
         <div className="home--container">
             <Slider 
@@ -57,9 +60,14 @@ export default function Home() {
                 prev={prevCard}
                 img={visableCard.images.small} 
                 name={visableCard.name} 
+                rarity={visableCard.rarity}
                 set={visableCard.set.name}
                 number={visableCard.number}
                 setNumber={visableCard.set.total}
+                low={visableCard.tcgplayer.prices["1stEditionHolofoil"].low.toFixed(2)}
+                mid={visableCard.tcgplayer.prices["1stEditionHolofoil"].mid.toFixed(2)}
+                high={visableCard.tcgplayer.prices["1stEditionHolofoil"].high.toFixed(2)}
+                market={visableCard.tcgplayer.prices["1stEditionHolofoil"].market.toFixed(2)}
             />
         </div>
      );

@@ -3,6 +3,7 @@
     width: 600px;
     height: 400px;
     display: flex;
+    transition-duration: 0.3s;
 }
 
 .slider--button {
@@ -11,8 +12,60 @@
     justify-content: center;
     align-items: center;
     border: 2px solid grey;
+    transition-duration: 0.3s;
 }
 
 .slider--content {
+    border: 2px solid grey;
     width: 90%;
+    display: flex;
+}
+
+.slider--img__container {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider--img__container img {
+    border-radius: 10px;
+    box-shadow: 1px 1px #000000;
+}
+
+.slider--set {
+    font-size: 12px;
+    margin: 5px 0px;
+}
+
+.slider--rarity {
+    font-size: 12px;
+    margin: 5px 0px;
+}
+
+.slider--name {
+    margin: 20px 0px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.slider--card--content {
+    margin: 30px 0px;
+}
+
+.slider--price--subContainer {
+    width: 70px;
+    background-color: #eaeaea;
+}
+
+.slider--price--title {
+    margin: 2px 2px;
+    font-size: 10px;
+}
+
+.slider--price--value {
+    padding-bottom: 2px;
+    margin: 2px 0px 15px 2px;
+    font-size: 15px;
+    font-weight: 500;
 }
