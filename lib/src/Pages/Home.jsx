@@ -27,13 +27,12 @@ export default function Home() {
         }
     })
 
-    let [counter, setCounter] = useState(10)
+    let [counter, setCounter] = useState(0)
     let [visableCard, setVisableCard] = useState(base1Arr[counter])
     
-
     const nextCard = () => {
-        if(counter < base1Arr.length){
-            setCounter(counter + 1)
+        if(counter < base1Arr.length - 1){
+            setCounter(counter = counter + 1)
             setVisableCard(base1Arr[counter])
         }else{
             setCounter(counter = 0)
@@ -41,13 +40,21 @@ export default function Home() {
         }
     }
 
-    console.log(visableCard)
+    const prevCard = () => {
+        if(counter > 0){
+            setCounter(counter = counter - 1)
+            setVisableCard(base1Arr[counter])
+        }else{
+            setCounter(counter = base1Arr.length - 1)
+            setVisableCard(base1Arr[counter])
+        }
+    }
 
     return ( 
         <div className="home--container">
             <Slider 
                 next={nextCard}
-                // prev={prevCard}
+                prev={prevCard}
                 img={visableCard.images.small} 
                 name={visableCard.name} 
                 set={visableCard.set.name}
