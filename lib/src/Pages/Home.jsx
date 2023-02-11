@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.css'
 import Slider from './Components/Slider'
 import { useLoaderData } from 'react-router-dom'
+import { useState } from 'react'
 
 export default function Home() {
 
@@ -9,31 +10,49 @@ export default function Home() {
     const base1Data = useLoaderData()
     let base1Arr = []
 
-    base1Data.data.map(({images, name, set, number, tcgplayer }) => {
-        return(
-            base1Arr.push(
-                {
-                 images,
-                 name,
-                 set,
-                 number,
-                 tcgplayer,
-                }
+    base1Data.data.map(({images, name, set, number, rarity, flavorText, tcgplayer }) => {
+        if(rarity === "Rare Holo"){
+            return(
+                base1Arr.push(
+                    {
+                        images,
+                        name,
+                        set,
+                        number,
+                        flavorText,
+                        tcgplayer,
+                    }
+                )
             )
-        )
+        }
     })
 
-    console.log(base1Data.data)
-    // console.log(base1Arr)
+    let [counter, setCounter] = useState(10)
+    let [visableCard, setVisableCard] = useState(base1Arr[counter])
+    
+
+    const nextCard = () => {
+        if(counter < base1Arr.length){
+            setCounter(counter + 1)
+            setVisableCard(base1Arr[counter])
+        }else{
+            setCounter(counter = 0)
+            setVisableCard(base1Arr[counter])
+        }
+    }
+
+    console.log(visableCard)
 
     return ( 
         <div className="home--container">
             <Slider 
-                img={base1Arr[0].images.small} 
-                name={base1Arr[0].name} 
-                set={base1Arr[0].set.name}
-                number={base1Arr[0].number}
-                setNumber={base1Arr[0].set.total}
+                next={nextCard}
+                // prev={prevCard}
+                img={visableCard.images.small} 
+                name={visableCard.name} 
+                set={visableCard.set.name}
+                number={visableCard.number}
+                setNumber={visableCard.set.total}
             />
         </div>
      );
