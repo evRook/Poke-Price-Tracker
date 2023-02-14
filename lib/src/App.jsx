@@ -7,13 +7,13 @@ import {
     RouterProvider 
   } from 'react-router-dom'
 import { Home, Layout, Sets } from './Pages'
-import { rocketLoader } from './loaders'
+import { rocketLoader, setsLoader } from './loaders'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
         <Route index element={<Home />} loader={rocketLoader}/>
-        {/* <Route path='sets' element={<Sets />}></Route> */}
+        <Route path='sets' element={<Sets />} loader={setsLoader}></Route>
     </Route>
   )
 )

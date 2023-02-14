@@ -1,0 +1,11 @@
+.sets--container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sets--container > * {
+    margin: 10px;
+}
+
