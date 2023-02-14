@@ -1,5 +1,5 @@
 .slider--container {
-    background-image: linear-gradient(to bottom right, #a9a9a9, #272727);
+    /* background-image: linear-gradient(to bottom right, #a9a9a9, #272727); */
     width: 700px;
     height: 400px;
     display: flex;
@@ -9,7 +9,7 @@
 }
 
 .slider--button {
-    background-color: #00000039;
+    /* background-color: #00000039; */
     width: 25px;
     display: flex;
     justify-content: center;
@@ -58,7 +58,7 @@
 
 .slider--price--subContainer {
     width: 70px;
-    background-color: #a2a2a2;
+    background-color: #f6f6f6;
 }
 
 .slider--price--title {

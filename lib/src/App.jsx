@@ -13,7 +13,9 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
         <Route index element={<Home />} loader={rocketLoader}/>
-        <Route path='sets' element={<Sets />} loader={setsLoader}></Route>
+        <Route path='sets' element={<Sets />} loader={setsLoader}>
+          {/* <Route path=':setId' element={<Cards />} /> */}
+        </Route>
     </Route>
   )
 )
