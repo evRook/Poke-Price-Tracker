@@ -12,8 +12,8 @@ export default function Sets() {
     setsData.data.map(({images, name, id}) => {
         return(
             setsCards.push(
-                <Link to={`/sets/${id}`} key={id}>
-                    <SetsCard img={images.logo} title={name}/>
+                <Link to={`/sets/${id}`} key={id} style={{textDecoration: 'none'}}>
+                    <SetsCard img={images.logo} title={name} />
                 </Link>
             )
         )
