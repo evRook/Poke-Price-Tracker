@@ -1,5 +1,6 @@
 
 .card--container {
+    min-height: 750px;
     margin: 25px;
     display: flex;
     flex-wrap: wrap;

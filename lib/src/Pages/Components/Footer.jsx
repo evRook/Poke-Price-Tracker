@@ -4,7 +4,7 @@ import './Footer.css'
 export default function Footer() {
     return ( 
         <div className="footer--container">
-            <p className="footer--text">Footer Here</p>
+            <p className="footer--text"></p>
         </div>
      );
 }

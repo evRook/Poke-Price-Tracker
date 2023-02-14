@@ -1,4 +1,5 @@
 .footer--container {
-    border: 2px solid grey;
     width: 100%;
+    height: 100px;
+    background-image: linear-gradient(#31313a, #1d1d22);
 }
