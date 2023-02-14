@@ -1,0 +1,43 @@
+
+.card--container {
+    margin: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #7e7e77;
+}
+
+.card--container > * {
+    margin: 10px;
+}
+
+.card--content {
+    height: 190px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background-image: linear-gradient(to bottom right, #31313a, #000109);
+    box-shadow: 5px 5px 5px #000000;
+    cursor: pointer;
+}
+
+.card--content:active {
+    background-image: linear-gradient(to bottom right, #000109, #31313a);
+}
+
+.card--content img {
+    height: 140px;
+    width: 100px;
+    object-fit: scale-down;
+    border-radius: 8px;
+}
+
+.card--content p {
+    margin: 5px;
+    font-size: 12px;
+    font-weight: 500
+}
+
