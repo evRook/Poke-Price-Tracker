@@ -1,5 +1,4 @@
 .setsCard--container {
-    border: 2px grey solid;
     height: 200px;
     width: 150px;
     padding: 10px;
@@ -7,10 +6,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #60605c;
+    border-radius: 25px;
+    background-image: linear-gradient(to bottom right, #31313a, #000109);
+    box-shadow: 5px 5px 5px #000000;
+}
+
+.setsCard--container:active {
+    background-image: linear-gradient(to bottom right, #000109, #31313a);
 }
 
 .setsCard--img {
     height: 150px;
     width: 100px;
     object-fit: scale-down;
+}
+
+.setsCard--title {
+    text-align: center;
 }
