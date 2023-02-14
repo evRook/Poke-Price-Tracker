@@ -1,25 +1,57 @@
 .slider--container {
-    /* background-image: linear-gradient(to bottom right, #a9a9a9, #272727); */
     width: 700px;
     height: 400px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
-    transition-duration: 0.3s;
+    align-items: center;
+    color: #60605c;
     font-family: Arial, Helvetica, sans-serif;
+    border-radius: 25px;
+    background-image: linear-gradient(to bottom right, #31313a, #000109);
+    box-shadow: 5px 5px 5px #000000;
 }
 
 .slider--button {
-    /* background-color: #00000039; */
+    height: 25px;
     width: 25px;
+    padding: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition-duration: 0.3s;
+    border-radius: 50%;
+    border-bottom: 2px outset #31313a;
+    border-right: 2px outset #31313a;
+    background-image: linear-gradient(to bottom right, #31313a, #000000);
+    cursor: pointer;
+}
+
+.slider--button:active {
+    border-bottom: none;
+    border-right: none;
+    border-top: 2px outset #31313a;
+    border-left: 2px outset #31313a;
+    background-image: linear-gradient(to bottom right, #000000, #31313a);
+}
+
+.slider--button p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider--button__prev {
+    padding: 1px 2px 0px 0px;
+}
+
+.slider--button__next {
+    padding: 1px 0px 0px 2px;
 }
 
 .slider--content {
     width: 90%;
     display: flex;
+    justify-content: center;
 }
 
 .slider--img__container {
@@ -28,12 +60,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-duration: 1s;
 }
 
 .slider--img__container img {
     border-radius: 10px;
-    transform: rotate3d(1, 1, -1, 4deg);
-    box-shadow: 2px 2px #000000;
+    transform: rotate(-2deg);
+    border-bottom: 4px outset #545461;
+    border-right: 4px outset #676777;
 }
 
 .slider--card--content {
@@ -54,11 +88,6 @@
     margin: 20px 0px;
     font-size: 30px;
     font-weight: 800;
-}
-
-.slider--price--subContainer {
-    width: 70px;
-    background-color: #f6f6f6;
 }
 
 .slider--price--title {

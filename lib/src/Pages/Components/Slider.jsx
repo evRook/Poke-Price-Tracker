@@ -5,10 +5,12 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 export default function Slider({next, prev, img, name, rarity, set, number, setNumber, low, mid, high, market}) {
     return ( 
         <div className="slider--container">
-            <div className="slider--button" onClick={prev}>{<IoIosArrowBack />}</div>
+            <div className="slider--button" onClick={prev}>
+                <p className="slider--button__prev">{<IoIosArrowBack />}</p>
+            </div>
             <div className="slider--content">
                 <div className="slider--img__container">
-                    <img src={img} alt="" />
+                    <img className="slider--img" src={img} alt="" />
                 </div>
                 <div className="slider--card--content">
                     <div className="slider--text__container">
@@ -36,7 +38,9 @@ export default function Slider({next, prev, img, name, rarity, set, number, setN
                     </div>
                 </div>
             </div>
-            <div className="slider--button" onClick={next}>{<IoIosArrowForward />}</div>
+            <div className="slider--button" onClick={next}>
+                <p className="slider--button__next">{<IoIosArrowForward />}</p>
+            </div>
         </div>
      );
 }
