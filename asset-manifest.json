@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Poke-Price-Tracker/static/css/main.16f5237f.css",
+    "main.js": "/Poke-Price-Tracker/static/js/main.dea54016.js",
+    "static/js/787.a3c90659.chunk.js": "/Poke-Price-Tracker/static/js/787.a3c90659.chunk.js",
+    "static/media/pngegg.png": "/Poke-Price-Tracker/static/media/pngegg.b19a19e52f8d8aa7bbc7.png",
+    "static/media/logo.svg": "/Poke-Price-Tracker/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Poke-Price-Tracker/index.html",
+    "main.16f5237f.css.map": "/Poke-Price-Tracker/static/css/main.16f5237f.css.map",
+    "main.dea54016.js.map": "/Poke-Price-Tracker/static/js/main.dea54016.js.map",
+    "787.a3c90659.chunk.js.map": "/Poke-Price-Tracker/static/js/787.a3c90659.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.16f5237f.css",
+    "static/js/main.dea54016.js"
+  ]
+}
