@@ -1,9 +1,9 @@
 {
-  "homepage": "http://evrook.github.io/Poke-Price-Tracker",
+  "homepage": "http://evrook.github.io/Poke-Price-Tracker/",
   "name": "evrook-poke-price-tracker",
   "repository": {
     "type": "git",
-    "url": "https://github.com/evRook/Poke-Price-Tracker"
+    "url": "https://github.com/evRook/Poke-Price-Tracker/"
   },
   "version": "0.1.0",
   "private": true,
