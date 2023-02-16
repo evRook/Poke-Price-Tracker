@@ -19,6 +19,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     border-radius: 25px;
     background-image: linear-gradient(to bottom right, #31313a, #000109);
     box-shadow: 5px 5px 5px #000000;

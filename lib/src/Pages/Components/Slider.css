@@ -65,7 +65,6 @@
 
 .slider--img__container img {
     border-radius: 10px;
-    transform: rotate(-2deg);
     border-bottom: 4px outset #545461;
     border-right: 4px outset #676777;
 }
