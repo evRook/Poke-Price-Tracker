@@ -13,8 +13,8 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/Poke-Price-Tracker' element={<Layout />}>
         <Route index element={<Home />} loader={rocketLoader}/>
-        <Route path='sets' element={<Sets />} loader={setsLoader}> </Route>
-        <Route path='sets/:setId' element={<Cards />} />
+        {/* <Route path='sets' element={<Sets />} loader={setsLoader}> </Route>
+        <Route path='sets/:setId' element={<Cards />} /> */}
     </Route>
   )
 )

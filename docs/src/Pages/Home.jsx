@@ -7,13 +7,13 @@ import { useState } from 'react'
 export default function Home() {
 
 
-    const base1Data = useLoaderData()
-    let base1Arr = []
+    const rocketData = useLoaderData()
+    let rocketArr = []
 
-    base1Data.data.map(({images, name, set, number, rarity, flavorText, tcgplayer }) => {
+    rocketData.data.map(({images, name, set, number, rarity, flavorText, tcgplayer }) => {
         if(rarity === "Rare Holo"){
             return(
-                base1Arr.push(
+                rocketArr.push(
                     {
                      images,
                      name,
@@ -29,25 +29,25 @@ export default function Home() {
     })
 
     let [counter, setCounter] = useState(0)
-    let [visableCard, setVisableCard] = useState(base1Arr[counter])
+    let [visableCard, setVisableCard] = useState(rocketArr[counter])
     
     const nextCard = () => {
-        if(counter < base1Arr.length - 1){
+        if(counter < rocketArr.length - 1){
             setCounter(counter = counter + 1)
-            setVisableCard(base1Arr[counter])
+            setVisableCard(rocketArr[counter])
         }else{
             setCounter(counter = 0)
-            setVisableCard(base1Arr[counter])
+            setVisableCard(rocketArr[counter])
         }
     }
 
     const prevCard = () => {
         if(counter > 0){
             setCounter(counter = counter - 1)
-            setVisableCard(base1Arr[counter])
+            setVisableCard(rocketArr[counter])
         }else{
-            setCounter(counter = base1Arr.length - 1)
-            setVisableCard(base1Arr[counter])
+            setCounter(counter = rocketArr.length - 1)
+            setVisableCard(rocketArr[counter])
         }
     }
 
