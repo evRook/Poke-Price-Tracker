@@ -17,18 +17,18 @@ export default function Cards() {
             .then(data => {
                 setPkmnData(data.data)
             })
-    },[])
+    })
       
-    // pkmnData.map(({images, name, id}) => {
-    //     return(
-    //         cardSet.push(
-    //             <div className="card--content" key={id}>
-    //                 <img src={images.small} alt="" />
-    //                 <p>{name}</p>
-    //             </div>
-    //         )
-    //     )
-    // })
+    pkmnData.map(({images, name, id}) => {
+        return(
+            cardSet.push(
+                <div className="card--content" key={id}>
+                    <img src={images.small} alt="" />
+                    <p>{name}</p>
+                </div>
+            )
+        )
+    })
     
       console.log(pkmnData)
       console.log(cardSet)

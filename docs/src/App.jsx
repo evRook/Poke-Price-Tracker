@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import {
     Route, 
@@ -11,7 +11,7 @@ import { rocketLoader, setsLoader } from './loaders'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<Layout />}>
+    <Route path='/Poke-Price-Tracker' element={<Layout />}>
         <Route index element={<Home />} loader={rocketLoader}/>
         <Route path='sets' element={<Sets />} loader={setsLoader}> </Route>
         <Route path='sets/:setId' element={<Cards />} />
