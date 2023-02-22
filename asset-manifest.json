@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Poke-Price-Tracker/static/css/main.16f5237f.css",
-    "main.js": "/Poke-Price-Tracker/static/js/main.509d88bb.js",
+    "main.css": "/Poke-Price-Tracker/static/css/main.afe15f2a.css",
+    "main.js": "/Poke-Price-Tracker/static/js/main.f0201ea7.js",
     "static/js/787.a3c90659.chunk.js": "/Poke-Price-Tracker/static/js/787.a3c90659.chunk.js",
     "static/media/pngegg.png": "/Poke-Price-Tracker/static/media/pngegg.b19a19e52f8d8aa7bbc7.png",
     "index.html": "/Poke-Price-Tracker/index.html",
-    "main.16f5237f.css.map": "/Poke-Price-Tracker/static/css/main.16f5237f.css.map",
-    "main.509d88bb.js.map": "/Poke-Price-Tracker/static/js/main.509d88bb.js.map",
+    "main.afe15f2a.css.map": "/Poke-Price-Tracker/static/css/main.afe15f2a.css.map",
+    "main.f0201ea7.js.map": "/Poke-Price-Tracker/static/js/main.f0201ea7.js.map",
     "787.a3c90659.chunk.js.map": "/Poke-Price-Tracker/static/js/787.a3c90659.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.16f5237f.css",
-    "static/js/main.509d88bb.js"
+    "static/css/main.afe15f2a.css",
+    "static/js/main.f0201ea7.js"
   ]
 }
